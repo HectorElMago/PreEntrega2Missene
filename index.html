@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link de Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Link de CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Link de Llamamos Font Montserrat-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <!-- Llamamos Fuente de Logos Bonitos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Home</title>
+</head>
+<body>
+    <!-- implementamos navbar recomendada de bootstrap, con algunos ajustes personalizados -->
+    <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="src/logoDorado.svg" alt="Logo" width="100" height="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>   
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/games.html">Games</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="bg-custom container-fluid">
+        <section class="text-center">
+            <img src="src/logoDorado-sin-HYM.svg" alt="Logo Dorado" class="logo">
+            <h1>HYM Dream</h1>
+            <p>“Soluciones inteligentes generan negocios inteligentes”</p>
+        </section>
+        <section class="container-fluid" >
+            <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+                <article class="col">
+                    <div class="card h-100 card-custom">
+                        <img src="src/aboutUs-home.webp" class="card-img-top" alt="Imagen-About-Us">
+                        <div class="card-body">
+                            <h2 class="card-title">About Us</h2>
+                            <p class="card-text">Haz un recorrido por nuestro equipo, descubre lo que nos motiva, nuestra misión y visión.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="pages/about-us.html" class="btn btn-primary">Saber más...</a>
+                        </div>
+                    </div>
+                </article>
+            
+                <article class="col">
+                    <div class="card h-100 card-custom">
+                        <img src="src/games-home.webp" class="card-img-top" alt="Imagen-Games">
+                        <div class="card-body">
+                            <h2 class="card-title">Games</h2>
+                            <p class="card-text">Ya es hora de explorar nuestra emocionante colección de videojuegos.</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="pages/games.html" class="btn btn-primary">Saber más...</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="col">
+                    <div class="card h-100 card-custom">
+                        <img src="src/services-home.webp" class="card-img-top" alt="Imagen-Games">
+                        <div class="card-body">
+                            <h2 class="card-title">Services</h2>
+                            <p class="card-text">Mejora tu negocio o proyecto con nuestras herramientas</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="pages/services.html" class="btn btn-primary">Saber más...</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    
+    
+    <!-- implementamos footer recomendada de bootstrap, con algunos ajustes personalizados -->
+    <footer class="bg-custom text-center text-custom">
+        <div class="container p-4 pb-0">
+            <section class="mb-4">
+                <!-- Twitter -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/HectorMissene" target="_blank" role="button"
+                    ><i class="fab fa-twitter"></i
+                ></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/hectorelmago_/" target="_blank" role="button"
+                    ><i class="fab fa-instagram"></i
+                ></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/hector-yusseff-missene-navarro-15a737226/" target="_blank" role="button"
+                    ><i class="fab fa-linkedin-in"></i
+                ></a>
+
+                <!-- Github -->
+                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/HectorElMago" target="_blank" role="button"
+                    ><i class="fab fa-github"></i
+                ></a>
+            </section>
+        </div>
+
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2024 Derechos Reservados:
+            <a class="text-white" href="https://hymdream.com/" target="_blank">HYMDream.com</a>
+        </div>
+    </footer>
+    
+    <!-- Link de Bootstrap para JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
