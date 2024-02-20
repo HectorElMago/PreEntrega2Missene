@@ -1,16 +1,16 @@
-/* Personalizacion de los botones del acordeon */
+/* Personalización de los botones del acordeón */
 .accordion-button.text-custom {
   background-color: $secondary-color;
   color: $primary-color;
+
+  /* Personalización cuando el botón del acordeón está colapsado */
+  &:not(.collapsed) {
+    background-color: $primary-color;
+    color: $secondary-color;
+  }
 }
 
-/* Personalizacion cuando el boton del acordeón esta colapsado */
-.accordion-button.text-custom:not(.collapsed) {
-  background-color: $primary-color;
-  color: $secondary-color;
-}
-
-/* Personalizacion del cuerpo del acordepn */
+/* Personalización del cuerpo del acordeón */
 .accordion-body.custom-body {
   background-color: $primary-color;
   color: $secondary-color;

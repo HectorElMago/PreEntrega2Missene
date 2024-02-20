@@ -1,57 +1,51 @@
-/* Estilo general de los articles */
 .article-servicio {
-  background-color: $secondary-color; /* Fondo oscuro para los articles */
-  color: $primary-color; /* Texto en color claro para contraste */
-  padding: 1rem; /* Espaciado interno */
-  border-radius: 0.5rem; /* Bordes redondeados */
-  margin-bottom: 2rem; /* Espaciado entre articles */
-}
+  background-color: $secondary-color; // Fondo oscuro para los articles
+  color: $primary-color; // Texto en color claro para contraste
+  padding: 1rem; // Espaciado interno
+  border-radius: 0.5rem; // Bordes redondeados
+  margin-bottom: 2rem; // Espaciado entre articles
 
-/* Estilo para las imágenes dentro de articles */
-.article-servicio img {
-  border-radius: 0.5rem; /* Bordes redondeados para las imágenes */
-  margin-bottom: 1rem; /* Espaciado debajo de las imágenes */
-}
+  img {
+    border-radius: 0.5rem; // Bordes redondeados para las imágenes
+    margin-bottom: 1rem; // Espaciado debajo de las imágenes
+  }
 
-/* Estilo para los títulos dentro de articles */
-.article-servicio h2 {
-  font-family: $font-family;
-  font-weight: $font-weight-black; /* Montserrat Black */
-  margin-bottom: 0.5rem; /* Espaciado debajo del título */
-}
+  h2 {
+    font-family: $font-family;
+    font-weight: $font-weight-black; // Montserrat Black
+    margin-bottom: 0.5rem; // Espaciado debajo del título
+  }
 
-/* Estilo para los párrafos dentro de articles */
-.article-servicio p {
-  font-family: $font-family;
-  font-weight: $font-weight-regular; /* Montserrat Regular */
-  margin-bottom: 1rem; /* Espaciado debajo de los párrafos */
-}
+  p {
+    font-family: $font-family;
+    font-weight: $font-weight-regular; // Montserrat Regular
+    margin-bottom: 1rem; // Espaciado debajo de los párrafos
+  }
 
-/* Estilo para los botones dentro de articles */
-.article-servicio .btn-primary {
-  background-color: $primary-color; /* Fondo del botón */
-  border-color: $primary-color; /* Borde del botón */
-  color: $secondary-color; /* Texto del botón */
-  font-weight: $font-weight-semi-bold; /* Montserrat Semi-Bold */
-}
+  .btn-primary {
+    background-color: $primary-color; // Fondo del botón
+    border-color: $primary-color; // Borde del botón
+    color: $secondary-color; // Texto del botón
+    font-weight: $font-weight-semi-bold; // Montserrat Semi-Bold
 
-.article-servicio .btn-primary:hover {
-  background-color: #ffffff; /* Fondo del botón al pasar el ratón */
-  color: $secondary-color; /* Texto del botón al pasar el ratón */
+    &:hover {
+      background-color: #ffffff; // Fondo del botón al pasar el ratón
+      color: $secondary-color; // Texto del botón al pasar el ratón
+    }
+  }
 }
 
 .img-fluid {
   border-radius: 20px;
 }
 
-/* Ajustes para dispositivos más pequeños */
+// Ajustes para dispositivos más pequeños
 @media (max-width: 768px) {
   .article-servicio {
-    padding: 0.5rem; /* Espaciado interno más pequeño para pantallas pequeñas */
-  }
+    padding: 0.5rem; // Espaciado interno más pequeño para pantallas pequeñas
 
-  /* Estilo responsivo para los botones dentro de articles en pantallas pequeñas */
-  .article-servicio .btn-primary {
-    font-size: 0.8rem; /* Tamaño de fuente más pequeño para el texto del botón */
+    .btn-primary {
+      font-size: 0.8rem; // Tamaño de fuente más pequeño para el texto del botón
+    }
   }
 }

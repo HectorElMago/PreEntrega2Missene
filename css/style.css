@@ -39,148 +39,80 @@ p {
     font-size: 3vw;
   }
 }
-/* Se veia un poco raro, asi se ajusta un poco antes y despues de los 768px*/
-@media (min-width: 768px) {
-  h1 {
-    font-size: 5vw;
-  }
-  p {
-    font-size: 3vw;
-  }
+.btn-primary {
+  background-color: #dad3bf;
+  color: #021c1f;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
+.btn-primary:hover {
+  background-color: #ede9df;
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .navbar-custom {
   background-color: #021c1f;
   font-family: "Montserrat", sans-serif;
-  font-weight: 900; /*'Montserrat', sans-serif font-weight: $font-weight-black genera la version Black*/
+  font-weight: 900;
 }
-
-/* Cambiamos el color de los elementos de la navbar*/
 .navbar-custom .navbar-nav .nav-link {
   color: #dad3bf;
 }
-
-/* Generamos un cambio de color al pasar el mouse por encima mediante hover*/
 .navbar-custom .navbar-nav .nav-link:hover {
   color: #ffffff;
 }
 
-/* Cuando se pasan los 992px de ancho, se genera un boton hamburguesa, le cambiamos el color */
 .navbar-toggler {
   background-color: #dad3bf;
 }
-
-/* Le añadimos una animacion al pasar por encima, quitando opacidad */
 .navbar-toggler:hover {
   opacity: 0.7;
 }
 
-/* Footer personalizado añadiendo clases */
 footer.bg-custom {
   color: #dad3bf;
+  /* Ajusta la clase btn-outline-light de Bootstrap para que coincida con los estilos personalizados */
 }
-
 footer.bg-custom a {
   color: #dad3bf;
 }
-
 footer.bg-custom a:hover {
   color: #ffffff;
 }
-
-/* Ajusta la clase btn-outline-light de bootstrap para que coincida con los estilos personalizados */
 footer.bg-custom .btn-outline-light {
   border-color: #dad3bf;
   color: #dad3bf;
 }
-
 footer.bg-custom .btn-outline-light:hover {
   border-color: #ffffff;
   color: #dad3bf;
 }
 
-/* Personalizacion de los botones del acordeon */
+/* Personalización de los botones del acordeón */
 .accordion-button.text-custom {
   background-color: #021c1f;
   color: #dad3bf;
+  /* Personalización cuando el botón del acordeón está colapsado */
 }
-
-/* Personalizacion cuando el boton del acordeón esta colapsado */
 .accordion-button.text-custom:not(.collapsed) {
   background-color: #dad3bf;
   color: #021c1f;
 }
 
-/* Personalizacion del cuerpo del acordepn */
+/* Personalización del cuerpo del acordeón */
 .accordion-body.custom-body {
   background-color: #dad3bf;
   color: #021c1f;
   border-top: 1px solid #021c1f;
 }
 
-.carousel-container {
-  max-width: 40%;
-  margin: auto;
-  overflow: hidden;
-}
-
-/* Estilo para los subtitulos y párrafos dentro del carrusel */
-.carousel-caption {
-  background: rgba(2, 28, 31, 0.75);
-  border-radius: 0.5rem;
-  padding: 1rem;
-  position: absolute;
-  right: 15%;
-  bottom: 20px;
-  left: 15%;
-  z-index: 10;
-}
-
-.carousel-caption h5 {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 800;
-  color: #dad3bf;
-  margin-bottom: 0.5rem;
-}
-
-.carousel-caption p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  color: #dad3bf;
-}
-
-/* Ajustes para imagenes del carrusel para que se ajusten bien y mantengan proporciones */
-.carousel-item img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  max-height: 500px;
-}
-
-/* Ajustes para botones de navegación del carrusel para mejorar visibilidad */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: #dad3bf;
-  border-radius: 0.5rem;
-  padding: 0.5rem;
-}
-
-/* Ajuste responsive */
-@media (max-width: 768px) {
-  .carousel-caption {
-    font-size: 0.8rem;
-  }
-  .carousel-container {
-    max-width: 80%;
-  }
-  .p-person {
-    font-size: 3vw;
-  }
-}
 .card-custom {
   background-color: #dad3bf;
   color: #021c1f;
 }
-
 .card-custom .btn-primary {
   background-color: #021c1f;
   border-color: #021c1f;
@@ -189,24 +121,29 @@ footer.bg-custom .btn-outline-light:hover {
   color: #dad3bf;
   font-size: 3vw;
 }
-
 .card-custom .btn-primary:hover {
   background-color: #ffffff;
   color: #021c1f;
   border-color: #021c1f;
 }
 
-.card-title {
+.card-title,
+.card-text {
   font-family: "Montserrat", sans-serif;
-  font-weight: 900;
   color: #021c1f;
+}
+.card-title::first-letter,
+.card-text::first-letter {
+  color: #ff0000;
+}
+
+.card-title {
+  font-weight: 900;
   font-size: 5vw;
 }
 
 .card-text {
-  font-family: "Montserrat", sans-serif;
   font-weight: 800;
-  color: #021c1f;
   font-size: 4vw;
 }
 
@@ -214,11 +151,6 @@ footer.bg-custom .btn-outline-light:hover {
   padding: 15px;
 }
 
-.card-text::first-letter {
-  color: #ff0000;
-}
-
-/* Se veia un poco raro, asi se ajusta un poco antes y despues de los 768px*/
 @media (min-width: 768px) {
   .card-title {
     font-size: 3vw;
@@ -230,50 +162,32 @@ footer.bg-custom .btn-outline-light:hover {
 .contact-form-section {
   padding: 2rem 0;
 }
-
 .contact-form-section .form-label {
   font-weight: 600;
   color: #dad3bf;
 }
-
-.contact-form-section .form-control {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid #dad3bf;
-  color: #dad3bf;
-}
-
-.contact-form-section .form-control:focus {
-  border-color: #ffffff;
-  box-shadow: 0 0 0 0.2rem rgba(218, 211, 191, 0.25);
-}
-
+.contact-form-section .form-control,
 .contact-form-section .form-select {
   background-color: rgba(255, 255, 255, 0.1);
   border: 1px solid #dad3bf;
   color: #dad3bf;
 }
-
+.contact-form-section .form-control:focus,
 .contact-form-section .form-select:focus {
   border-color: #ffffff;
   box-shadow: 0 0 0 0.2rem rgba(218, 211, 191, 0.25);
 }
-
 .contact-form-section .btn-primary {
   background-color: #dad3bf;
   border-color: #dad3bf;
   color: #021c1f;
 }
-
 .contact-form-section .btn-primary:hover {
   background-color: #ffffff;
   color: #021c1f;
 }
-
 .contact-form-section .form-select option {
   color: #021c1f;
-}
-
-.contact-form-section .form-select option {
   background-color: #dad3bf;
 }
 
@@ -284,7 +198,6 @@ footer.bg-custom .btn-outline-light:hover {
   font-family: "Montserrat", sans-serif;
   background-color: #021c1f;
 }
-
 .main-games h1 {
   font-weight: 900;
 }
@@ -311,73 +224,68 @@ footer.bg-custom .btn-outline-light:hover {
   border-radius: 5px;
   overflow: hidden;
   line-height: 0;
+  transition: transform 0.3s ease;
 }
-
 .game-img img {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
   vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+.game-img:hover {
+  transform: scale(1.5);
+}
+.game-img:hover img {
+  transform: scale(1.1);
 }
 
 .game-img-npc:hover img {
   transform: scale(2);
 }
 
-/* Estilo general de los articles */
 .article-servicio {
-  background-color: #021c1f; /* Fondo oscuro para los articles */
-  color: #dad3bf; /* Texto en color claro para contraste */
-  padding: 1rem; /* Espaciado interno */
-  border-radius: 0.5rem; /* Bordes redondeados */
-  margin-bottom: 2rem; /* Espaciado entre articles */
+  background-color: #021c1f;
+  color: #dad3bf;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
 }
-
-/* Estilo para las imágenes dentro de articles */
 .article-servicio img {
-  border-radius: 0.5rem; /* Bordes redondeados para las imágenes */
-  margin-bottom: 1rem; /* Espaciado debajo de las imágenes */
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
 }
-
-/* Estilo para los títulos dentro de articles */
 .article-servicio h2 {
   font-family: "Montserrat", sans-serif;
-  font-weight: 900; /* Montserrat Black */
-  margin-bottom: 0.5rem; /* Espaciado debajo del título */
+  font-weight: 900;
+  margin-bottom: 0.5rem;
 }
-
-/* Estilo para los párrafos dentro de articles */
 .article-servicio p {
   font-family: "Montserrat", sans-serif;
-  font-weight: 400; /* Montserrat Regular */
-  margin-bottom: 1rem; /* Espaciado debajo de los párrafos */
+  font-weight: 400;
+  margin-bottom: 1rem;
 }
-
-/* Estilo para los botones dentro de articles */
 .article-servicio .btn-primary {
-  background-color: #dad3bf; /* Fondo del botón */
-  border-color: #dad3bf; /* Borde del botón */
-  color: #021c1f; /* Texto del botón */
-  font-weight: 600; /* Montserrat Semi-Bold */
+  background-color: #dad3bf;
+  border-color: #dad3bf;
+  color: #021c1f;
+  font-weight: 600;
 }
-
 .article-servicio .btn-primary:hover {
-  background-color: #ffffff; /* Fondo del botón al pasar el ratón */
-  color: #021c1f; /* Texto del botón al pasar el ratón */
+  background-color: #ffffff;
+  color: #021c1f;
 }
 
 .img-fluid {
   border-radius: 20px;
 }
 
-/* Ajustes para dispositivos más pequeños */
 @media (max-width: 768px) {
   .article-servicio {
-    padding: 0.5rem; /* Espaciado interno más pequeño para pantallas pequeñas */
+    padding: 0.5rem;
   }
-  /* Estilo responsivo para los botones dentro de articles en pantallas pequeñas */
   .article-servicio .btn-primary {
-    font-size: 0.8rem; /* Tamaño de fuente más pequeño para el texto del botón */
+    font-size: 0.8rem;
   }
 }
 .mission-vision-title {
@@ -405,6 +313,64 @@ section h2 {
   max-width: 30%;
   height: auto;
   min-width: 150px; /* Esto soluciona para que tenga logica en movil*/
+}
+
+.carousel-container {
+  max-width: 40%;
+  margin: auto;
+  overflow: hidden;
+  /* Ajustes para imagenes del carrusel para que se ajusten bien y mantengan proporciones */
+}
+.carousel-container .carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  max-height: 500px;
+  object-position: center 30%;
+}
+
+/* Estilo para los subtítulos y párrafos dentro del carrusel */
+.carousel-caption {
+  background: rgba(2, 28, 31, 0.75);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  position: absolute;
+  right: 15%;
+  bottom: 20px;
+  left: 15%;
+  z-index: 10;
+}
+.carousel-caption h5 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  color: #dad3bf;
+  margin-bottom: 0.5rem;
+}
+.carousel-caption p {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: #dad3bf;
+}
+
+/* Ajustes para botones de navegación del carrusel para mejorar visibilidad */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #dad3bf;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+/* Ajuste responsive */
+@media (max-width: 768px) {
+  .carousel-caption {
+    font-size: 0.8rem;
+  }
+  .carousel-container {
+    max-width: 80%;
+  }
+  .p-person {
+    font-size: 3vw;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

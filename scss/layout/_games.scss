@@ -4,10 +4,10 @@
   color: $primary-color;
   font-family: $font-family;
   background-color: $secondary-color;
-}
 
-.main-games h1 {
-  font-weight: $font-weight-black;
+  h1 {
+    font-weight: $font-weight-black;
+  }
 }
 
 .game-description {
@@ -32,15 +32,27 @@
   border-radius: 5px;
   overflow: hidden;
   line-height: 0;
+  transition: transform 0.3s ease;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+  }
+
+  &:hover {
+    transform: scale(1.5);
+
+    img {
+      transform: scale(1.1);
+    }
+  }
 }
 
-.game-img img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  vertical-align: middle;
-}
-
-.game-img-npc:hover img {
-  transform: scale(2);
+.game-img-npc:hover {
+  img {
+    transform: scale(2);
+  }
 }

@@ -11,10 +11,12 @@
   font-size: 2vw;
 }
 
-section h2 {
-  font-family: $font-family;
-  font-weight: $font-weight-black;
-  color: $primary-color;
-  text-align: center;
-  margin-bottom: 1rem;
+section {
+  h2 {
+    font-family: $font-family;
+    font-weight: $font-weight-black;
+    color: $primary-color;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
 }

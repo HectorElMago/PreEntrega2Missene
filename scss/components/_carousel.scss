@@ -2,9 +2,20 @@
   max-width: 40%;
   margin: auto;
   overflow: hidden;
+
+  /* Ajustes para imagenes del carrusel para que se ajusten bien y mantengan proporciones */
+  .carousel-item {
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      max-height: 500px;
+      object-position: center 30%;
+    }
+  }
 }
 
-/* Estilo para los subtitulos y párrafos dentro del carrusel */
+/* Estilo para los subtítulos y párrafos dentro del carrusel */
 .carousel-caption {
   background: rgba(2, 28, 31, 0.75);
   border-radius: 0.5rem;
@@ -14,27 +25,19 @@
   bottom: 20px;
   left: 15%;
   z-index: 10;
-}
 
-.carousel-caption h5 {
-  font-family: $font-family;
-  font-weight: $font-weight-extra-bold;
-  color: $primary-color;
-  margin-bottom: 0.5rem;
-}
+  h5 {
+    font-family: $font-family;
+    font-weight: $font-weight-extra-bold;
+    color: $primary-color;
+    margin-bottom: 0.5rem;
+  }
 
-.carousel-caption p {
-  font-family: $font-family;
-  font-weight: $font-weight-regular;
-  color: $primary-color;
-}
-
-/* Ajustes para imagenes del carrusel para que se ajusten bien y mantengan proporciones */
-.carousel-item img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  max-height: 500px;
+  p {
+    font-family: $font-family;
+    font-weight: $font-weight-regular;
+    color: $primary-color;
+  }
 }
 
 /* Ajustes para botones de navegación del carrusel para mejorar visibilidad */
