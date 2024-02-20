@@ -1,0 +1,10 @@
+/* Se veia un poco raro, asi se ajusta un poco antes y despues de los 768px*/
+@media (min-width: 768px) {
+  h1 {
+    font-size: 5vw;
+  }
+
+  p {
+    font-size: 3vw;
+  }
+}

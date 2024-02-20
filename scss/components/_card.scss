@@ -1,0 +1,52 @@
+.card-custom {
+  background-color: $primary-color;
+  color: $secondary-color;
+}
+
+.card-custom .btn-primary {
+  background-color: $secondary-color;
+  border-color: $secondary-color;
+  font-family: $font-family;
+  font-weight: $font-weight-extra-bold;
+  color: $primary-color;
+  font-size: 3vw;
+}
+
+.card-custom .btn-primary:hover {
+  background-color: #ffffff;
+  color: $secondary-color;
+  border-color: $secondary-color;
+}
+
+.card-title {
+  font-family: $font-family;
+  font-weight: $font-weight-black;
+  color: $secondary-color;
+  font-size: 5vw;
+}
+
+.card-text {
+  font-family: $font-family;
+  font-weight: $font-weight-extra-bold;
+  color: $secondary-color;
+  font-size: 4vw;
+}
+
+.card-img-top {
+  padding: 15px;
+}
+
+.card-text::first-letter {
+  color: #ff0000;
+}
+
+/* Se veia un poco raro, asi se ajusta un poco antes y despues de los 768px*/
+@media (min-width: 768px) {
+  .card-title {
+    font-size: 3vw;
+  }
+
+  .card-text {
+    font-size: 2vw;
+  }
+}

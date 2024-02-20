@@ -1,0 +1,18 @@
+/* Personalizacion de los botones del acordeon */
+.accordion-button.text-custom {
+  background-color: $secondary-color;
+  color: $primary-color;
+}
+
+/* Personalizacion cuando el boton del acordeón esta colapsado */
+.accordion-button.text-custom:not(.collapsed) {
+  background-color: $primary-color;
+  color: $secondary-color;
+}
+
+/* Personalizacion del cuerpo del acordepn */
+.accordion-body.custom-body {
+  background-color: $primary-color;
+  color: $secondary-color;
+  border-top: 1px solid $secondary-color;
+}

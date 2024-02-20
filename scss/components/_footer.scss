@@ -1,0 +1,23 @@
+/* Footer personalizado añadiendo clases */
+footer.bg-custom {
+  color: $primary-color;
+}
+
+footer.bg-custom a {
+  color: $primary-color;
+}
+
+footer.bg-custom a:hover {
+  color: #ffffff;
+}
+
+/* Ajusta la clase btn-outline-light de bootstrap para que coincida con los estilos personalizados */
+footer.bg-custom .btn-outline-light {
+  border-color: $primary-color;
+  color: $primary-color;
+}
+
+footer.bg-custom .btn-outline-light:hover {
+  border-color: #ffffff;
+  color: $primary-color;
+}

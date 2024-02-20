@@ -1,178 +1,285 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Link de Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
     <!-- Link de CSS-->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style.css" />
     <!-- Link de Llamamos Font Montserrat-->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Llamamos Fuente de Logos Bonitos -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <title>Services</title>
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <title>Servicios</title>
+  </head>
+  <body>
     <!-- implementamos navbar recomendada de bootstrap, con algunos ajustes personalizados -->
     <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../src/logoDorado.svg" alt="Logo" width="100" height="100">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>   
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about-us.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="games.html">Games</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact-us.html">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img
+            src="../src/logoDorado.svg"
+            alt="Logo"
+            width="100"
+            height="100"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about-us.html">Sobre Nosostros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="games.html">Videojuegos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact-us.html">Contacto</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <main class="bg-custom container-fluid py-5">
-        <h1 class="text-center text-custom mb-4">Services</h1>
-    
-        
-        <section class="mt-5">
-            <!-- Servicio 1 -->
-            <article class="row mb-4 article-servicio">
-                <div class="col-md-4">
-                    <img src="../src/agendar-horas.webp" class="img-fluid" alt="Servicio 1">
-                </div>
-                <div class="col-md-8">
-                    <h2 class="text-custom">Administración de Reuniones</h2>
-                    <p class="text-custom">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam odit saepe, totam odio illum expedita eos dolorum vitae velit quibusdam enim! Quaerat maiores nulla hic ab distinctio culpa! Soluta, architecto.</p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalService">
-                        Solicitar Información
-                    </button>
-                </div>
-            </article>
-        
-            <!-- Servicio 2 -->
-            <article class="row mb-4 article-servicio">
-                <div class="col-md-4">
-                    <img src="../src/reportes.webp" class="img-fluid" alt="Servicio 2">
-                </div>
-                <div class="col-md-8">
-                    <h2 class="text-custom">Generación de Reportes</h2>
-                    <p class="text-custom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat quis enim reprehenderit quisquam, error obcaecati dignissimos nisi? Iste, voluptatibus beatae ullam, tempora ab dolor ut incidunt iure, impedit tenetur quaerat.</p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalService">
-                        Solicitar Información
-                    </button>
-                </div>
-            </article>
-        
-            <!-- Servicio 3 -->
-            <article class="row mb-4 article-servicio">
-                <div class="col-md-4">
-                    <img src="../src/analisis-datos.webp" class="img-fluid" alt="Servicio 3">
-                </div>
-                <div class="col-md-8">
-                    <h2 class="text-custom">Análisis de Datos</h2>
-                    <p class="text-custom">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae veritatis, ipsum optio ad mollitia iusto repellendus nostrum corrupti at assumenda alias placeat dignissimos eos voluptatum hic deleniti corporis doloremque temporibus!</p>
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalService">
-                        Solicitar Información
-                    </button>
-                </div>
-            </article>
-        </section>
+      <h1 class="text-center text-custom mb-4">SERVICIOS</h1>
 
-        <!-- Modal de Bootstrap para el boton -->
-        <div class="modal fade" id="modalService" tabindex="-1" aria-labelledby="modalService1Label" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content bg-custom text-custom">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalServiceLabel">Solicitud de Servicio</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <section class="contact-form-section bg-custom text-custom">
-                            <div class="container p-4">
-                                <form>
-                                    <!-- Nombre -->
-                                    <div class="mb-3">
-                                        <label for="nombre" class="form-label">Nombre</label>
-                                        <input type="text" class="form-control" id="nombre" required>
-                                    </div>
-                        
-                                    <!-- Mail -->
-                                    <div class="mb-3">
-                                        <label for="email" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="email" required>
-                                    </div>
-                        
-                                    <!-- Asunto -->
-                                    <div class="mb-3">
-                                        <label for="asunto" class="form-label">Asunto</label>
-                                        <input type="text" class="form-control" id="asunto">
-                                    </div>
-                        
-                                    <!-- Mensaje -->
-                                    <div class="mb-3">
-                                        <label for="mensaje" class="form-label">Mensaje</label>
-                                        <textarea class="form-control" id="mensaje" rows="3"></textarea>
-                                    </div>
-                        
-                                    <!-- Botón de Envío -->
-                                    <button type="submit" class="btn btn-primary">Enviar</button>
-                                </form>
-                            </div>
-                        </section>
-                    </div>
-                </div>
+      <section class="mt-5">
+        <!-- Servicio 1 -->
+        <article class="row mb-4 article-servicio">
+          <div class="col-md-4">
+            <img
+              src="../src/agendar-horas.webp"
+              class="img-fluid"
+              alt="Servicio 1"
+            />
+          </div>
+          <div class="col-md-8">
+            <h2 class="text-custom">Administración de Reuniones</h2>
+            <p class="text-custom">
+              ¡Administra tus reuniones mas facilmente con nuestra herramienta!
+            </p>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#modalService"
+            >
+              Solicitar Información
+            </button>
+          </div>
+        </article>
+
+        <!-- Servicio 2 -->
+        <article class="row mb-4 article-servicio">
+          <div class="col-md-4">
+            <img
+              src="../src/reportes.webp"
+              class="img-fluid"
+              alt="Servicio 2"
+            />
+          </div>
+          <div class="col-md-8">
+            <h2 class="text-custom">Generación de Reportes</h2>
+            <p class="text-custom">
+              ¡Genera reportes de tus reuniones de manera sencilla y rápida!
+            </p>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#modalService"
+            >
+              Solicitar Información
+            </button>
+          </div>
+        </article>
+
+        <!-- Servicio 3 -->
+        <article class="row mb-4 article-servicio">
+          <div class="col-md-4">
+            <img
+              src="../src/analisis-datos.webp"
+              class="img-fluid"
+              alt="Servicio 3"
+            />
+          </div>
+          <div class="col-md-8">
+            <h2 class="text-custom">Análisis de Datos</h2>
+            <p class="text-custom">
+              ¡Analiza tus datos de manera sencilla y rápida!
+            </p>
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#modalService"
+            >
+              Solicitar Información
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <!-- Modal de Bootstrap para el boton -->
+      <div
+        class="modal fade"
+        id="modalService"
+        tabindex="-1"
+        aria-labelledby="modalService1Label"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content bg-custom text-custom">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalServiceLabel">
+                Solicitud de Servicio
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
             </div>
+            <div class="modal-body">
+              <section class="contact-form-section bg-custom text-custom">
+                <div class="container p-4">
+                  <form>
+                    <!-- Nombre -->
+                    <div class="mb-3">
+                      <label for="nombre" class="form-label">Nombre</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="nombre"
+                        required
+                      />
+                    </div>
+
+                    <!-- Mail -->
+                    <div class="mb-3">
+                      <label for="email" class="form-label">Email</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="email"
+                        required
+                      />
+                    </div>
+
+                    <!-- Asunto -->
+                    <div class="mb-3">
+                      <label for="asunto" class="form-label">Asunto</label>
+                      <input type="text" class="form-control" id="asunto" />
+                    </div>
+
+                    <!-- Mensaje -->
+                    <div class="mb-3">
+                      <label for="mensaje" class="form-label">Mensaje</label>
+                      <textarea
+                        class="form-control"
+                        id="mensaje"
+                        rows="3"
+                      ></textarea>
+                    </div>
+
+                    <!-- Botón de Envío -->
+                    <button type="submit" class="btn btn-primary">
+                      Enviar
+                    </button>
+                  </form>
+                </div>
+              </section>
+            </div>
+          </div>
         </div>
+      </div>
     </main>
-    
+
     <!-- implementamos footer recomendada de bootstrap, con algunos ajustes personalizados -->
     <footer class="bg-custom text-center text-custom">
-        <div class="container p-4 pb-0">
-            <section class="mb-4">
-                <!-- Twitter -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/HectorMissene" target="_blank" role="button"
-                    ><i class="fab fa-twitter"></i
-                ></a>
+      <div class="container p-4 pb-0">
+        <section class="mb-4">
+          <!-- Twitter -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://twitter.com/HectorMissene"
+            target="_blank"
+            role="button"
+            ><i class="fab fa-twitter"></i
+          ></a>
 
-                <!-- Instagram -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/hectorelmago_/" target="_blank" role="button"
-                    ><i class="fab fa-instagram"></i
-                ></a>
+          <!-- Instagram -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://www.instagram.com/hectorelmago_/"
+            target="_blank"
+            role="button"
+            ><i class="fab fa-instagram"></i
+          ></a>
 
-                <!-- Linkedin -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/hector-yusseff-missene-navarro-15a737226/" target="_blank" role="button"
-                    ><i class="fab fa-linkedin-in"></i
-                ></a>
+          <!-- Linkedin -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://www.linkedin.com/in/hector-yusseff-missene-navarro-15a737226/"
+            target="_blank"
+            role="button"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
 
-                <!-- Github -->
-                <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/HectorElMago" target="_blank" role="button"
-                    ><i class="fab fa-github"></i
-                ></a>
-            </section>
-        </div>
+          <!-- Github -->
+          <a
+            class="btn btn-outline-light btn-floating m-1"
+            href="https://github.com/HectorElMago"
+            target="_blank"
+            role="button"
+            ><i class="fab fa-github"></i
+          ></a>
+        </section>
+      </div>
 
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2024 Derechos Reservados:
-            <a class="text-white" href="https://hymdream.com/" target="_blank">HYMDream.com</a>
-        </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2024 Derechos Reservados:
+        <a class="text-white" href="https://hymdream.com/" target="_blank"
+          >HYMDream.com</a
+        >
+      </div>
     </footer>
-    
+
     <!-- Link de Bootstrap para JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
