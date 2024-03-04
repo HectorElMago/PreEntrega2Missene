@@ -1,0 +1,9 @@
+# Carpeta de Node Modules
+node_modules/
+
+# Carpeta SCSS
+scss/
+
+# Archivo package.json
+package.json
+

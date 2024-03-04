@@ -10,7 +10,8 @@
       height: auto;
       object-fit: cover;
       max-height: 500px;
-      object-position: center 30%;
+      object-position: center 10%;
+      max-height: 40vw;
     }
   }
 }
@@ -50,15 +51,21 @@
 
 /* Ajuste responsive */
 @media (max-width: 768px) {
+  .carousel-container {
+    max-width: 80%;
+
+    .carousel-item img {
+      max-height: 500px;
+    }
+  }
+
   .carousel-caption {
+    right: 10%;
+    left: 10%;
     font-size: 0.8rem;
   }
 
-  .carousel-container {
-    max-width: 80%;
-  }
-
   .p-person {
-    font-size: 3vw;
+    font-size: 4vw;
   }
 }

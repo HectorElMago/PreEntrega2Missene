@@ -1,4 +1,4 @@
-.article-servicio {
+.article-beads {
   background-color: $secondary-color; // Fondo oscuro para los articles
   color: $primary-color; // Texto en color claro para contraste
   padding: 1rem; // Espaciado interno
@@ -14,6 +14,7 @@
     font-family: $font-family;
     font-weight: $font-weight-black; // Montserrat Black
     margin-bottom: 0.5rem; // Espaciado debajo del título
+    font-size: 5rem;
   }
 
   p {
@@ -35,17 +36,66 @@
   }
 }
 
+.text-beads {
+  font-size: 2rem;
+  text-align: justify;
+}
+
+.text-description-beads {
+  font-size: 2rem;
+  text-align: justify;
+  margin-left: 6rem;
+  margin-right: 6rem;
+}
+
 .img-fluid {
   border-radius: 20px;
+  margin-top: 0.5rem;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.img-article-beads {
+  @extend .img-fluid;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+
+  @media (min-width: 768px) {
+    max-width: 100%;
+  }
 }
 
 // Ajustes para dispositivos más pequeños
 @media (max-width: 768px) {
-  .article-servicio {
+  .article-beads {
     padding: 0.5rem; // Espaciado interno más pequeño para pantallas pequeñas
 
     .btn-primary {
       font-size: 0.8rem; // Tamaño de fuente más pequeño para el texto del botón
     }
+  }
+
+  .text-beads {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .text-description-beads {
+    font-size: 1rem;
+    text-align: justify;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
