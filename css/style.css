@@ -160,7 +160,7 @@ footer.bg-custom .btn-outline-light:hover {
   font-family: "Montserrat", sans-serif;
   font-weight: 800;
   color: #dad3bf;
-  font-size: 1.5vw;
+  font-size: 4vw;
 }
 .card-custom .btn-primary:hover {
   background-color: #ffffff;
@@ -181,12 +181,12 @@ footer.bg-custom .btn-outline-light:hover {
 
 .card-title {
   font-weight: 900;
-  font-size: 4vw;
+  font-size: 5vw;
 }
 
 .card-text {
   font-weight: 800;
-  font-size: 2vw;
+  font-size: 4vw;
 }
 
 .card-img-top {
@@ -201,7 +201,10 @@ footer.bg-custom .btn-outline-light:hover {
     font-size: 3vw;
   }
   .card-text {
-    font-size: 2vw;
+    font-size: 1.5vw;
+  }
+  .card-custom .btn-primary {
+    font-size: 1vw;
   }
 }
 .contact-form-section {
@@ -280,6 +283,8 @@ footer.bg-custom .btn-outline-light:hover {
   .section-description,
   .game-description {
     font-size: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
   .gif-size-alone {
     width: 100%;
